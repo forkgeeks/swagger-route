@@ -1,0 +1,32 @@
+{
+  "name": "swagger-route",
+  "version": "0.0.0",
+  "description": "Standalone swagger routes in ExpressJS notation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard && mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mabdullah353/swagger-route.git"
+  },
+  "keywords": [
+    "swagger",
+    "routes",
+    "swagger",
+    "express",
+    "standalone",
+    "routes"
+  ],
+  "author": "Abdullah Bashir <mabdullah353@gmail.com> (https://github.com/forkgeeks)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mabdullah353/swagger-route/issues"
+  },
+  "homepage": "https://github.com/mabdullah353/swagger-route#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.2",
+    "standard": "^7.1.2"
+  }
+}
