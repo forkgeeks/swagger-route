@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mabdullah353/swagger-route.git"
+    "url": "git+https://github.com/forkgeeks/swagger-route.git"
   },
   "keywords": [
     "swagger",
@@ -21,9 +21,9 @@
   "author": "Abdullah Bashir <mabdullah353@gmail.com> (https://github.com/forkgeeks)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mabdullah353/swagger-route/issues"
+    "url": "https://github.com/forkgeeks/swagger-route/issues"
   },
-  "homepage": "https://github.com/mabdullah353/swagger-route#readme",
+  "homepage": "https://github.com/forkgeeks/swagger-route#readme",
   "devDependencies": {
     "chai": "^3.5.0",
     "mocha": "^3.0.2",
