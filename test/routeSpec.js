@@ -6,39 +6,44 @@ let chai = require('chai')
 let expect = chai.expect
 
 describe('Routes', function () {
-  describe('#get()', function () {
-    it('Method is availble', function () {
+  describe('HTTP Method defined', function () {
+    it('#get()', function () {
       expect(route.hasOwnProperty('get')).to.equal(true)
     })
-  })
 
-  describe('#post()', function () {
-    it('Method is availble', function () {
+    it('#post()', function () {
       expect(route.hasOwnProperty('post')).to.equal(true)
     })
-  })
 
-  describe('#put()', function () {
-    it('Method is availble', function () {
+    it('#put()', function () {
       expect(route.hasOwnProperty('put')).to.equal(true)
     })
-  })
 
-  describe('#delete()', function () {
-    it('Method is availble', function () {
+    it('#delete()', function () {
       expect(route.hasOwnProperty('delete')).to.equal(true)
     })
-  })
 
-  describe('#head()', function () {
-    it('Method is availble', function () {
+    it('#head()', function () {
       expect(route.hasOwnProperty('head')).to.equal(true)
     })
-  })
 
-  describe('#patch()', function () {
-    it('Method is availble', function () {
+    it('#patch()', function () {
       expect(route.hasOwnProperty('patch')).to.equal(true)
+    })
+  })
+  describe('Routes registration', function () {
+    it('#index', function () {
+      route.get('/index', function (req, resp) {
+        return {'path': 'index', 'method': 'get'}
+      })
+
+      expect(route.allResources).to.have.property('/index')
+      let _resource = route.allResources['/index']
+      expect(Object.keys(_resource).length).to.equal(1)
+      route.post('/index', function (req, resp) {
+        return {'path': 'index', 'method': 'post'}
+      })
+      expect(Object.keys(_resource).length).to.equal(2)
     })
   })
 })
