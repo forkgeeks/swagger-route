@@ -2,7 +2,7 @@
   "name": "swagger-route",
   "version": "0.0.0",
   "description": "Standalone swagger routes in ExpressJS notation.",
-  "main": "/lib/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "standard && mocha test"
   },

@@ -1,7 +1,7 @@
 'use strict'
 /* eslint-env mocha */
 
-let route = require('../lib/routes.js')
+let route = require('../lib/index.js')
 let chai = require('chai')
 let expect = chai.expect
 
